@@ -4,6 +4,12 @@ Integration of some Linux terminal commands for Windows Command Prompt.
 
 This CLA is in costant update with new command.
 
+`Warning! Installing this library in a Linux OS or in a OS X (mac) machine may cause system commands overriding, 
+which could become a serious problem. The code is ment to not work in non-Windows systems, but in Unix OSes it could 
+overwite and"hide" the commands it provides.`
+
+
+
 `Installation`:
 
     $ pip install winux

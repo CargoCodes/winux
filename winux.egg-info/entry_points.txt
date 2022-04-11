@@ -7,6 +7,7 @@ kill = winux:kill
 ls = winux:ls
 man = winux:man
 mem = winux:mem
+mkdir = winux:mkdir
 mv = winux:mv
 nano = winux:nano
 ps = winux:psX

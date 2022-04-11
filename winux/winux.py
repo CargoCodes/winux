@@ -13,21 +13,21 @@ def ls():
         os.system('dir')
 
 @click.command()
-@click.argument('fileName', required=True)
-@click.argument('destination', required=True)
+@click.argument('fileName')
+@click.argument('destination')
 def mv(fileName, destination):
     if os.name == name:
         os.system(f'move {fileName} {destination}')
 
 @click.command()
-@click.argument('file', required=True)
-@click.argument('destination', required=True)
+@click.argument('file')
+@click.argument('destination')
 def cp(file, destination):
     if os.name == name:
         os.system(f'copy {file} {destination}')
 
 @click.command()
-@click.argument('file', required=True)
+@click.argument('file')
 @click.option('-rf')
 def rm(file, rf):
     if os.name == name:
@@ -37,7 +37,7 @@ def rm(file, rf):
             os.system(f'rmdir {file}')
 
 @click.command()
-@click.argument('file', required=True)
+@click.argument('file')
 def cat(file):
     if os.name == name:
         os.system(f'type {file}')
@@ -77,20 +77,20 @@ def kill(prc):
         os.system(f'taskkill {prc}')
 
 @click.command()
-@click.argument('command', required=True)
+@click.argument('command')
 def man(command):
     if os.name == name:
         os.system(f'{command}/?')
 
 
 @click.command()
-@click.argument('name', required=True)
+@click.argument('name')
 def mkdir(name):
     if os.name == name:
         os.syetem(f'md {name}')
 
 @click.command()
-@click.command('opt', required=True)
+@click.command('opt')
 def psX(opt):
     if os.name == name:
         if opt != None and opt == 'x':
