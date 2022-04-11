@@ -14,16 +14,16 @@ setup(
     install_requires=['click'],
     entry_points=
     '''[console_scripts]
-    clear=winux:clear,
-    ls=winux:ls,
-    mv=winux:mv,
-    cp=winux:cp,
-    rm=winux:rm,
-    cat=winux:cat,
-    pwd=winux:pwd,
-    date=winux:date,
-    nano=winux:nano,
-    mem=winux:mem,
+    clear=winux:clear
+    ls=winux:ls
+    mv=winux:mv
+    cp=winux:cp
+    rm=winux:rm
+    cat=winux:cat
+    pwd=winux:pwd
+    date=winux:date
+    nano=winux:nano
+    mem=winux:mem
     kill=winux:kill
     man=winux:man
     ps=winux:psX
