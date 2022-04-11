@@ -32,7 +32,7 @@ def cp(file, destination):
 def rm(file, rf):
     if os.name == name:
         if rf == None:
-            os.system(f'rm {file}')
+            os.system(f'del {file}')
         else:
             os.system(f'rmdir {file}')
 
@@ -75,3 +75,25 @@ def du(argument):
 def kill(prc):
     if os.name == name:
         os.system(f'taskkill {prc}')
+
+@click.command()
+@click.argument('command', required=True)
+def man(command):
+    if os.name == name:
+        os.system(f'{command}/?')
+
+
+@click.command()
+@click.argument('name', required=True)
+def mkdir(name):
+    if os.name == name:
+        os.syetem(f'md {name}')
+
+@click.command()
+@click.command('opt', required=True)
+def psX(opt):
+    if os.name == name:
+        if opt != None and opt == 'x':
+            os.system('tasklist')
+        else:
+            print('Error. Must pass \"x\" parameter after "ps" command.')
