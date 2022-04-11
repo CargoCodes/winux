@@ -1,13 +1,13 @@
 Metadata-Version: 2.1
 Name: winux
-Version: 1.0.0
+Version: 1.0.1
 Summary: UNKNOWN
 Author: Cargo
 License: UNKNOWN
 Platform: UNKNOWN
 Description-Content-Type: text/markdown
 
-#Winux
+# Winux
 
 Integration of some Linux terminal commands for Windows Command Prompt.
 

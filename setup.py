@@ -7,7 +7,7 @@ longDescription = (directory/'README.md').read_text()
 setup(
     name='winux',
     author='Cargo',
-    version='1.0.0',
+    version='1.0.1',
     long_description=longDescription,
     long_description_content_type='text/markdown',
     packages=['winux'],
