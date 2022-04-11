@@ -1,13 +1,13 @@
 Metadata-Version: 2.1
 Name: winux
-Version: 1.1.1
+Version: 1.1.3
 Summary: UNKNOWN
 Author: Cargo
 License: UNKNOWN
 Platform: UNKNOWN
 Description-Content-Type: text/markdown
 
-# Winux
+#Winux
 
 Integration of some Linux terminal commands for Windows Command Prompt.
 
@@ -58,7 +58,6 @@ This Command Line Application allows to use Linux terminal commands in Windows C
 
     $ mkdir         (md)                Make a directory
 
-    $ ps x          (tasklist)          Show running tasks
 
 
 

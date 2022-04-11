@@ -49,5 +49,4 @@ This Command Line Application allows to use Linux terminal commands in Windows C
 
     $ mkdir         (md)                Make a directory
 
-    $ ps x          (tasklist)          Show running tasks
 
