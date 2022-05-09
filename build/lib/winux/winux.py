@@ -82,18 +82,14 @@ def man(command):
     if os.name == name:
         os.system(f'{command}/?')
 
+@click.command()
+@click.argument('diName')
+def mkdir(dirName):
+    if os.name == name:
+        os.syetem(f'md {dirName}')
 
 @click.command()
-@click.argument('name')
-def mkdir(name):
+@click.argument('fileName')
+def touch(fileName):
     if os.name == name:
-        os.syetem(f'md {name}')
-
-#@click.command()
-#@click.command('opt')
-#def psX(opt):
-#    if os.name == name:
-#        if opt != None and opt == 'x':
-#            os.system('tasklist')
-#        else:
-#            print('Error. Must pass \"x\" parameter after "ps" command.')
+        os.system(f'type nul >> "{fileName}"')

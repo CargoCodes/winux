@@ -6,7 +6,7 @@ This CLA is in costant update with new command.
 
 `Warning! Installing this library in a Linux OS or in a OS X (mac) machine may cause system commands overriding, 
 which could become a serious problem. The code is ment to not work in non-Windows systems, but in Unix OSes it could 
-overwite and"hide" the commands it provides.`
+overwite and "hide" the commands it provides.`
 
 
 
@@ -49,4 +49,5 @@ This Command Line Application allows to use Linux terminal commands in Windows C
 
     $ mkdir         (md)                Make a directory
 
+    $ touch         (type nul >>)       Create an empty file
 
